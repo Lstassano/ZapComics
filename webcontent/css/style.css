@@ -11,7 +11,7 @@ html{
 
 .logo {
     width: 100%; /*modifica della dimensione del logo*/
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     object-fit: contain;
 }
@@ -59,4 +59,33 @@ h3, h4, button, .btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0,4rem 1rem;
+    flex-wrap: wrap;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+
+    /* SFONDO COLORE FUMETTO AMERICANO*/
+    background-color: #0046be;
+    
+    /* Opzionale: un bel bordo nero spesso in perfetto stile fumetto */
+    border-bottom: 0.2rem solid black;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font: 400px;
+    font-weight: 600;
+    color: rgba(237,29,36);
 }
