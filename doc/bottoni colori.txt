@@ -1,0 +1,7 @@
+Valori da utilizzare per i bottoni:
+
+Bottoni che portano alle pagine:
+rosso comics:       rgba(237,29,36)
+
+Bottoni che permettono d'acquisto:
+giallo flash:       rgba(255, 255, 0)        
