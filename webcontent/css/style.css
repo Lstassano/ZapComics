@@ -3,48 +3,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
 }
 
+html{
+    font-size: 100%;
+}
+
+body, p {
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1rem; /*1rem corrisponde ad un 16px*/
+    line-height: 1.6;
+    color: black;
+}
+
+/*h1 e h2 con font Russo One*/
 h1 {
-    font-family: "Russo One", sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
-    line-height: 64px;
-    color: black;
+    font-size: 2.5rem; 
+    line-height: 1.2;
+    color: #000000;
 }
 
 h2 {
-    font-family: "Russo One", sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 35px;
-    line-height: 45px;
-    color: black;
+    font-size: 2.1875rem; /*35px*/  
+    line-height: 1.285;   /*45px*/
+    color: #000000;
+    margin-bottom: 1.25rem;
 }
 
-h3 {
-    font-family: "Teko", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-size: 25px;
-    line-height: 32px;
+/* Sottotitoli, bottoni e pulsanti con font Teko */
+h3, h4, button, .btn {
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
     font-style: normal;
-}
-
-h4 {
-    font-family: "Teko", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-size: 15px;
-    line-height: 19px;
-    font-style: normal;
-}
-
-.inter p {
-    font-family: "Teko", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+    font-size: 1.5rem; 
+    line-height: 1.1;
+    letter-spacing: 0.5px; 
 }
