@@ -108,4 +108,14 @@ h3, h4, button, .btn {
     left: 2rem;
 }
 
-/*Barra di posizionamento sotto ogni elemento della navbar*/
+/*--- HOME PAGE ---*/
+#hero {
+    background-image: url('../images/sfondo_hero.png');
+    background-size: cover;
+    background-position: right center; /* blocco immagine a destra */
+    background-repeat: no-repeat;   /*nessuna ripetizione*/
+    
+    /* Correzione della responsive */
+    height: 80vh; 
+    padding: 0 5%;
+}
