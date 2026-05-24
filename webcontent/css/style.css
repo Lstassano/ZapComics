@@ -81,6 +81,7 @@ h3, h4, button, .btn {
 #navbar li {
     list-style: none;   /*elimino il pallino della lista*/
     padding: 1rem 3rem;
+    position: relative; 
 }
 
 #navbar li a {
@@ -88,9 +89,23 @@ h3, h4, button, .btn {
     font: 400px;
     font-weight: 600;
     color: rgba(237,29,36);
+    transition: 0.3s ease;      /*aggiunto della lentezza alla transizione in modo che risulti più fluida*/
 }
 
-#navbar li a:hover {
+/*Effetto hover al passaggio del mouse sugli elementi della navbar*/
+#navbar li a:hover,
+#navbar li a.active {   /*colore sempre attivo per la pagine in focus*/
     color:  rgb(240, 200, 70);      /*cambio colore al passaggio del cursore sul testo*/
 }
 
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 0.2rem;
+    background: rgb(240, 200, 70);
+    position: absolute;
+    bottom: -0.2rem;
+    left: 2rem;
+}
+
+/*Barra di posizionamento sotto ogni elemento della navbar*/
