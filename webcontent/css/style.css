@@ -84,8 +84,13 @@ h3, h4, button, .btn {
 }
 
 #navbar li a {
-    text-decoration: none;
+    text-decoration: none;  /*tolgo la sottolineatura*/
     font: 400px;
     font-weight: 600;
     color: rgba(237,29,36);
 }
+
+#navbar li a:hover {
+    color:  rgb(240, 200, 70);      /*cambio colore al passaggio del cursore sul testo*/
+}
+
