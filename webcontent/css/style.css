@@ -134,7 +134,6 @@ h3, h4, button, .btn {
 
 #hero h4 {
     font-size: 2.2rem;
-    /*color: rgba(237,29,36);*/
 }
 
 #hero p{
@@ -145,3 +144,23 @@ h3, h4, button, .btn {
     color: rgba(237,29,36);
 }
 
+#hero .btn{
+    background-image: url('../images/bottone_shopping.png');
+    background-color: transparent;      /*rendere lo sfondo trasparente*/
+    color: black;
+    border: 0;
+    
+    /*Scalo correttamente lo sfondo*/
+    background-size: 100% 100%;     /*per coprire tutto il bottone*/
+    background-position: center;    /*centro l'immagine*/
+    background-repeat: no-repeat;   /*nessun duplicato*/
+
+    /*Imposto la dimensione del bottone*/
+    min-width: 220px;
+    height: 65px;       /*altezza fissa così evito che si deformi il rettangolo*/
+
+    /*Allineamento del testo all'interno del bottone*/
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
