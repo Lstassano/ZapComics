@@ -79,7 +79,7 @@ h3, h4, button, .btn {
 }
 
 #navbar li {
-    list-style: none;
+    list-style: none;   /*elimino il pallino della lista*/
     padding: 1rem 3rem;
 }
 
