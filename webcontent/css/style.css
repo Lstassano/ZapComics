@@ -144,7 +144,8 @@ h3, h4, button, .btn {
     color: rgba(237,29,36);
 }
 
-#hero .btn{
+/*--- Bottone per acquisto*/
+#hero button{
     background-image: url('../images/bottone_shopping.png');
     background-color: transparent;      /*rendere lo sfondo trasparente*/
     color: black;
@@ -157,10 +158,37 @@ h3, h4, button, .btn {
 
     /*Imposto la dimensione del bottone*/
     min-width: 220px;
-    height: 65px;       /*altezza fissa così evito che si deformi il rettangolo*/
 
     /*Allineamento del testo all'interno del bottone*/
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
+    /*Padding interno*/
+    padding: 20px 40px;
+
+    /*Comparsa della manina al passaggio del cursore sul bottone*/
+    cursor: pointer;
+
+    /*transizione più fluida*/
+    transition: transform 0.2s ease, filter 0.2s ease, margin-top 0.2s ease;
+}
+
+/* Effetto quando il mouse passa sopra il bottone (Hover) */
+#hero button:hover {
+    transform: scale(1.05) rotate(-1deg); 
+    
+    /* Aggiungo l'ombreggiatura */
+    filter: drop-shadow(0px 8px 0px rgba(0, 0, 0, 1));
+    
+    /* Simulo il salto spostando il margine verso l'alto, */
+    margin-top: -3px; 
+}
+
+/* Effetto quando il bottone viene cliccato (Active) */
+#hero button:active {
+    /* Simulo il feedback del click */
+    transform: scale(0.98);
+    filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 1));
+    margin-top: 3px;
 }
