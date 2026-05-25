@@ -1,0 +1,10 @@
+per gli sfondi utilizzare i tre colori tematici principali ma con intensità minore:
+
+ROSSO SUPERHERO:
+rgba(255, 0, 0, 0.741)
+
+GIALLO MISSIONE:
+rgba(240, 200, 70, 0.741)
+
+BLU FUMETTO
+rgba(0, 70, 190, 0.741)
