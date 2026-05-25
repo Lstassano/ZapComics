@@ -113,7 +113,7 @@ h3, h4, button, .btn {
     left: 2rem;
 }
 
-/*--- HOME PAGE ---*/
+                                    /*--- HERO SECTION ---*/
 #hero {
     background-image: url('../images/sfondo_hero.png');
     width: 100%;
@@ -197,3 +197,41 @@ h3, h4, button, .btn {
     filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 1));
     margin-top: 3px;
 }
+                                /*---- FINE HERO SECTION ---*/
+
+
+                                /*--- SEZIONE FEATURES BOX ---*/
+#features {
+    width: 100%;
+    padding: 3rem 2rem;       /* lascio dello spazio sopra e sotto la features section */
+    background-color: rgba(255, 0, 0, 0.741); /* colore bianco sotto il box */
+}
+
+.features-box {
+    display: flex;  
+    align-items: center;        /*centratura orizzontale dei tre box */
+    justify-content: center;    /*Allienamento verticale dei box*/
+    gap: 5rem;
+}
+
+/*Cambio lo spazio che vi è gli elementi img dentor il box*/
+.features-box img {
+    width: 100%;        /*l'immagine occupa tutto lo spazio*/
+    max-width: 320px;   /*limite massimo di ingrandimento dell'immagine*/
+    height: auto;       /*fa scalare in modo automatio l'altezza, evitando distorsioni*/
+    
+    /*aggiungo un effetto stile fumetto per creare l'illusione di distacco*/
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);       /*utilizzo lo stesso livello per creare coerenza*/
+    border-radius: 20px;
+
+    /*gestione della transizione per effetti di movimento*/
+    transition: transform 0.2s ease, filter 0.2s ease, margin-top 0.2s ease;
+}
+
+/*leggero effetto di movimento al passaggio del cursore*/
+.features-box img:hover {
+    transform: translateY(-5px);    /*leggero sollevamento del box al passaggio del cursore*/
+    /*background-color: rgb(240, 200, 70); attualmente disattivato*/
+}
+
+                                /*--- FINE SEZIONE FEATURES BOX ---*/
