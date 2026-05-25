@@ -1,0 +1,5 @@
+valori da seguire per aggiungere il box-shadow globalmente:
+
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+
+transition: transform 0.2s ease, filter 0.2s ease, margin-top 0.2s ease;
