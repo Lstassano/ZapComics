@@ -69,6 +69,11 @@ h3, h4, button, .btn {
     
     /* Opzionale: un bel bordo nero spesso in perfetto stile fumetto */
     border-bottom: 0.2rem solid black;
+
+    /*Fisso la navbar sempre in alto, anche scorrendo verso il basso*/
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #navbar {
